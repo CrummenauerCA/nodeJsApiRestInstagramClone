@@ -13,13 +13,15 @@ module.exports = {
     const { author, place, description, hashtags } = req.body
     const { filename: image } = req.file
 
-    await sharp(req.file.path)
+    await sharp(req.file.path) // Compress the uploaded image
     .resize(480)
     .jpeg({
       quality: 50
     }).toFile(
       path.resolve(req.file.destination, 'resized', image)
     )
+
+    fs.unlinkSync(req.file.path) // removes the original image
 
     const post = await Post.create({
       author,
