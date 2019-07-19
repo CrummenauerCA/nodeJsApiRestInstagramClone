@@ -2,7 +2,8 @@ const Post = require('../model/PostModel')
 
 module.exports = {
   async index(req, res) {
-
+    const posts = await Post.find().sort('-createdAt')
+    return res.json(posts)
   },
 
   async store(req, res) {
