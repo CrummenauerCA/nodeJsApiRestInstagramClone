@@ -13,3 +13,5 @@ Run yarn nodemon src/index.js or insert the text below in the package.json file:
 then type: yarn dev
 
 Using MongoDB with mongoose... yarn add mongoose
+
+yarn add multer - Used to interpret Multipart Form data
