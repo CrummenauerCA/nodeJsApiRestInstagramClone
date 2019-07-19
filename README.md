@@ -17,3 +17,4 @@ Using MongoDB with mongoose... yarn add mongoose
 yarn add multer - Used to interpret Multipart Form data
 
 The api can be accessed using this URL: http://localhost:3333/posts
+  To like a post, use this: http://localhost:3333/posts/<somePostId>/like
