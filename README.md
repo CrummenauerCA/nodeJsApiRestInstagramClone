@@ -22,3 +22,5 @@ The api can be accessed using this URL: http://localhost:3333/posts
 yarn add sharp - Using sharp to manipulate imagens...
 
 yarn add cors
+
+yarn add socket.io
